@@ -1,0 +1,9 @@
+env
+venv
+weights
+venv
+log
+__pycache__
+.hintrc
+faces_embeddings_db.json
+log

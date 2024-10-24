@@ -1,0 +1,9 @@
+Flask
+opencv-python
+mediapipe
+deepface
+fer
+numpy
+tf-keras
+numpy
+pandas

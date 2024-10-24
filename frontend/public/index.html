@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Face Recognition App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="progress-container">
+        <video id="videoInput" autoplay muted></video>
+        <canvas id="outputCanvas"></canvas>
+        <div class="progress-circle" id="progressCircle">
+        </div>
+      </div>
+      <form id="userInfoForm" class="form-container">
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter your name"
+          required
+        />
+        <input type="text" id="userId" placeholder="Enter your ID" required />
+        <button type="submit">Save</button>
+      </form>
+      <div style="padding: 8px;">
+        <button type="button" id="reset">reset</button>
+        <button type="button" id="start">start</button>
+        <button type="button" id="stop">stop</button>
+      </div>
+      <div id="capturedImagesContainer" class="captured-images-container"></div> <!-- قسم لعرض الصور -->
+    </div>
+
+    <script defer src="bundle.js"></script>
+  </body>
+</html>
